@@ -6,6 +6,7 @@ export default defineConfig({
 		name: "__MSG_extName__",
 		description: "__MSG_extDescription__",
 		default_locale: "ja",
+		permissions: ["identity"],
 	},
 	vite: () => ({
 		plugins: [tailwindcss()],

@@ -24,6 +24,7 @@
 		"wxt": "^0.17.10"
 	},
 	"dependencies": {
+		"backlog-js": "^0.13.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	}

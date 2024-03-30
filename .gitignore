@@ -3,4 +3,4 @@
 /.output/
 /.wxt/
 .DS_Store
-.env
+.env.local
