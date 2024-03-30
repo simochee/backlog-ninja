@@ -13,5 +13,5 @@ pre-commit:
   commands:
     biome:
       run: |-
-        npx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} \
-        && git update-index --again
+        npx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+        git update-index --again
