@@ -2,9 +2,11 @@
   "name": "backlog-ninja",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,10 @@
   "packageManager": "pnpm@9.0.0-beta.1+sha256.fba2e63d591308988fa66645c4f77d67aea9490c2a6c05f14b2b1154d207761e",
   "volta": {
     "node": "20.12.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "husky": "^9.0.11"
   }
 }
