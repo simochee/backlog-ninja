@@ -8,9 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Build for ${{ matrix.environment }}
     strategy:
       matrix:
-        browser: [chrome, firefox]
+        environment: [chrome, firefox]
     steps:
       - uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
         with:
@@ -23,8 +24,8 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run build --browser ${{ matrix.browser }}
+      - run: pnpm run zip --browser ${{ matrix.environment }}
       - uses: actions/upload-artifact@v4
         with:
-          name: output-${{ matrix.browser }}
-          path: .output
+          name: output-${{ github.run_id }}
+          path: .output/*.zip
