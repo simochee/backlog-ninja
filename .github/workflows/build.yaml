@@ -16,12 +16,12 @@ jobs:
         with:
           egress-policy: audit
       - uses: actions/checkout@v4
+      - run: corepack enable
       - uses: actions/setup-node@v4
         with:
           node-version-file: package.json
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
-      - run: corepack enable
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build --browser ${{ matrix.browser }}
       - uses: actions/upload-artifact@v4
