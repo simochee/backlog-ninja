@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./style.css";
+import "~/assets/style.css";
 
 const rootEl = document.getElementById("root");
 
@@ -9,7 +9,7 @@ if (rootEl instanceof HTMLElement) {
 
 	root.render(
 		<StrictMode>
-			<p className="text-red-800">Hello World</p>
+			<p className="text-red-800">Preferences</p>
 		</StrictMode>,
 	);
 }
