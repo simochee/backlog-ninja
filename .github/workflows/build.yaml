@@ -25,7 +25,3 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm run zip --browser ${{ matrix.environment }}
-      - uses: actions/upload-artifact@v4
-        with:
-          name: output-${{ github.run_id }}
-          path: .output/*.zip
