@@ -24,19 +24,19 @@ export const FormAuthorization = () => {
 				{browser.i18n.getMessage("authorizationMethods")}
 			</p>
 			<Tabs aria-describedby={labelId}>
-				<TabList className="flex gap-x-4 gap-y-2 flex-wrap">
+				<TabList className="flex flex-wrap gap-x-4 gap-y-2">
 					<Collection items={TAB_LIST_ITEMS}>
 						{({ id, label }) => (
 							<Tab
 								key={id}
 								id={id}
-								className="dark:text-zinc-100 text-zinc-800 flex items-center gap-x-2"
+								className="flex items-center gap-x-2 text-zinc-800 dark:text-zinc-100"
 							>
 								{(state) => (
 									<>
 										<span
 											className={clsx(
-												"block w-4 h-4 rounded-full",
+												"block h-4 w-4 rounded-full",
 												state.isSelected
 													? "border-5 border-zinc-900 dark:border-zinc-100"
 													: "border-2 border-zinc-600 dark:border-zinc-400",

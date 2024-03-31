@@ -20,8 +20,8 @@ export const NewSpace = () => {
 	};
 
 	return (
-		<div className="px-4 py-5 grid gap-5">
-			<div className="grid gap-2 place-items-start">
+		<div className="grid gap-5 px-4 py-5">
+			<div className="grid place-items-start gap-2">
 				<AppLink to="/" icon={ChevronLeftIcon}>
 					破棄して戻る
 				</AppLink>
