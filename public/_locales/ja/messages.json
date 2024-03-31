@@ -11,6 +11,15 @@
 	"backlogDomainDescription": {
 		"message": ".backlog.com または .backlog.jp で終わるドメインである必要があります。"
 	},
+	"authorizationMethods": {
+		"message": "認証方法"
+	},
+	"authorizationOAuth2": {
+		"message": "OAuth2"
+	},
+	"authorizationAccessToken": {
+		"message": "アクセストークン"
+	},
 	"backlogAccessToken": {
 		"message": "Backlog API アクセストークン"
 	}
