@@ -12,7 +12,7 @@ import { FormInput } from "./FormInput";
 
 const TAB_LIST_ITEMS = [
 	{ id: "oauth2", label: browser.i18n.getMessage("authorizationOAuth2") },
-	{ id: "pat", label: browser.i18n.getMessage("authorizationAccessToken") },
+	{ id: "pat", label: browser.i18n.getMessage("authorizationApiKey") },
 ] as const;
 
 export const FormAuthorization = () => {
@@ -52,16 +52,16 @@ export const FormAuthorization = () => {
 				<TabPanel id="oauth2">
 					<div className="mt-1">
 						<p className="text-xs text-zinc-500">
-							保存時に OAuth 2.0 による認可を行います。
+							{browser.i18n.getMessage("oauth2Description")}
 						</p>
 					</div>
 				</TabPanel>
 				<TabPanel id="pat">
 					<div className="mt-5">
 						<FormInput
-							label={browser.i18n.getMessage("backlogAccessToken")}
-							name="accessToken"
-							description="発行したアクセストークンを使用して認証を行います。"
+							label={browser.i18n.getMessage("apiKey")}
+							name="apiKey"
+							description={browser.i18n.getMessage("apiKeyDescription")}
 							isRequired
 						/>
 					</div>

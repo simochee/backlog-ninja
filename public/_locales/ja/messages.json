@@ -17,10 +17,16 @@
 	"authorizationOAuth2": {
 		"message": "OAuth2"
 	},
-	"authorizationAccessToken": {
-		"message": "アクセストークン"
+	"authorizationApiKey": {
+		"message": "APIキー"
 	},
-	"backlogAccessToken": {
+	"oauth2Description": {
+		"message": "OAuth2 認証を使用して Backlog に接続します。"
+	},
+	"apiKey": {
 		"message": "Backlog API アクセストークン"
+	},
+	"apiKeyDescription": {
+		"message": "Backlog のアクセストークンを入力してください。"
 	}
 }
