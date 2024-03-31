@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "~/assets/style.css";
+import { OptionsApp } from "./OptionsApp";
 
 const rootEl = document.getElementById("root");
 
@@ -9,7 +10,7 @@ if (rootEl instanceof HTMLElement) {
 
 	root.render(
 		<StrictMode>
-			<p className="text-red-800">Preferences</p>
+			<OptionsApp />
 		</StrictMode>,
 	);
 }

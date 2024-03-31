@@ -25,8 +25,11 @@
 		"wxt": "^0.17.10"
 	},
 	"dependencies": {
+		"@heroicons/react": "^2.1.3",
 		"backlog-js": "^0.13.1",
+		"clsx": "^2.1.0",
 		"react": "^18.2.0",
+		"react-aria-components": "^1.1.1",
 		"react-dom": "^18.2.0"
 	}
 }
