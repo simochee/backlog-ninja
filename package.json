@@ -13,8 +13,13 @@
 		"@commitlint/cli": "^19.2.2",
 		"@commitlint/config-conventional": "^19.2.2",
 		"@tailwindcss/vite": "4.0.0-alpha.14",
+		"@tsconfig/vite-react": "^3.0.2",
+		"@types/react": "^18.2.79",
+		"@types/react-dom": "^18.2.25",
 		"lefthook": "^1.6.10",
 		"lightningcss": "^1.24.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"sort-package-json": "^2.10.0",
 		"tailwindcss": "4.0.0-alpha.14",
 		"wxt": "^0.17.12"
