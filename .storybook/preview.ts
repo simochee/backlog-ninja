@@ -1,4 +1,5 @@
 import type { Loader, Parameters } from "@storybook/react";
+import "../assets/style.css";
 
 export const parameters = {
 	controls: {
@@ -9,4 +10,4 @@ export const parameters = {
 	},
 } satisfies Parameters;
 
-export const tags = ["autodocs", "autodocs"];
+export const tags = ["autodocs"];
