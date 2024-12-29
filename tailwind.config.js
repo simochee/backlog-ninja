@@ -3,6 +3,9 @@ export default {
 	content: ["./{components,entrypoints}/**/*.tsx"],
 	theme: {
 		extend: {
+			fontSize: {
+				"2xs": "0.625rem",
+			},
 			colors: {
 				brand: {
 					100: "#edf4f0",
