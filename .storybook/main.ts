@@ -17,5 +17,4 @@ export default {
 	],
 	framework: "@storybook/react-vite",
 	addons: ["@storybook/addon-essentials"],
-	staticDirs: ["./public"],
 } satisfies StorybookConfig;
