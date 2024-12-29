@@ -2,4 +2,5 @@
 /.output/
 /.wxt/
 .DS_Store
-.env.local
+*.local
+*.log

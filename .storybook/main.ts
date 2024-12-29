@@ -16,5 +16,5 @@ export default {
 		},
 	],
 	framework: "@storybook/react-vite",
-	addons: ["@storybook/addon-essentials"],
+	addons: ["@storybook/addon-essentials", "@chromatic-com/storybook"],
 } satisfies StorybookConfig;
