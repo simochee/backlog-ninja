@@ -1,6 +1,7 @@
 import { FaCog, FaProjectDiagram, FaTasks } from "react-icons/fa";
 import { MdNotifications } from "react-icons/md";
 import { TiDocumentText } from "react-icons/ti";
+import { SwitchSpace } from "./SwitchSpace";
 import { TooltipButton } from "./ToolipButton";
 
 type Props = {
@@ -27,9 +28,7 @@ const PopupLayout = ({ children }: Props) => {
 					</TooltipButton>
 				</nav>
 				<div className="mt-auto grid gap-4">
-					<TooltipButton tooltip="スペースの切り替え">
-						<img src="https://placehold.jp/48x48.png" alt="" />
-					</TooltipButton>
+					<SwitchSpace />
 					<TooltipButton tooltip="設定">
 						<FaCog />
 					</TooltipButton>
