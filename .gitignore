@@ -1,4 +1,8 @@
+/.wxt/
 /node_modules/
 /dist/
+!.env.example
+.env*
+*.local*
+*.log
 .DS_Store
-.env
