@@ -36,7 +36,7 @@ jobs:
           path: .output
 
   timeline:
-    needs: [submit]
+    needs: [build]
     permissions:
       actions: read
     runs-on: ubuntu-latest
