@@ -1,4 +1,5 @@
 /.wxt/
+/.output/
 /node_modules/
 /dist/
 !.env.example
