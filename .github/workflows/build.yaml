@@ -1,4 +1,4 @@
-name: Build Extension - ${{ github.ref_name }}
+name: Build Extension
 
 on:
   push:
