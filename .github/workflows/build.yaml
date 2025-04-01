@@ -1,0 +1,44 @@
+name: Build Extension - ${{ github.ref_name }}
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: step-security/harden-runner@1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/actions-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - run: pnpm wxt prepare
+
+      - run: pnpm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.repository }}-${{ github.ref_name }}-${{ github.sha }}
+          path: .output
+
+  timeline:
+    needs: [submit]
+    permissions:
+      actions: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Kesin11/github-action-timeline@v1
